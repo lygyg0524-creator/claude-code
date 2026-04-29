@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>임양균 | 보안관제 포트폴리오</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">&gt; 임양균_</div>
+            <ul class="nav-links">
+                <li><a href="#hero">홈</a></li>
+                <li><a href="#about">소개</a></li>
+                <li><a href="#skills">역량</a></li>
+                <li><a href="#activities">활동</a></li>
+                <li><a href="#projects">프로젝트</a></li>
+                <li><a href="#selfintro">자기소개</a></li>
+                <li><a href="#contact">연락처</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <canvas id="matrix-canvas"></canvas>
+        <div class="hero-content">
+            <p class="hero-greeting">// 안녕하세요, 저는</p>
+            <h1 class="hero-name">임양균</h1>
+            <div class="hero-title">
+                <span class="prompt">&gt;&nbsp;</span><span id="typing-text"></span><span class="cursor">|</span>
+            </div>
+            <p class="hero-desc">사이버 공격의 최전선에서 위협을 탐지하고 대응하는<br>보안관제 전문가를 목표로 합니다.</p>
+            <div class="hero-btns">
+                <a href="#about" class="btn btn-primary">더 알아보기</a>
+                <a href="#contact" class="btn btn-outline">연락하기</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title"><span class="accent">// </span>소개</h2>
+            <div class="about-grid">
+                <div class="info-card">
+                    <div class="card-header">
+                        <span class="accent">$</span> whoami
+                    </div>
+                    <div class="info-item"><span class="info-label">이름</span><span class="info-value">임양균</span></div>
+                    <div class="info-item"><span class="info-label">생년월일</span><span class="info-value">2003.05.23</span></div>
+                    <div class="info-item"><span class="info-label">지원분야</span><span class="info-value accent-green">보안관제</span></div>
+                    <div class="info-item"><span class="info-label">소속</span><span class="info-value">건양대학교</span></div>
+                    <div class="info-item"><span class="info-label">전공</span><span class="info-value">사이버보안학과</span></div>
+                </div>
+                <div class="about-desc">
+                    <p>건양대학교 사이버보안학과에 재학 중이며, <span class="highlight">보안관제</span>를 목표로 웹 해킹과 취약점 분석을 꾸준히 학습하고 있습니다.</p>
+                    <p>드림핵 플랫폼의 워게임과 웹 해킹 동아리 활동을 통해 <span class="highlight">실전 감각</span>을 키워왔으며, 직접 웹 프로젝트를 개발하며 인프라 구조에 대한 이해도 갖추었습니다.</p>
+                    <p>로그 한 줄에서도 위협의 실마리를 찾아내는 <span class="highlight">집요함</span>으로 빈틈없는 실시간 모니터링을 수행하는 관제 요원이 되겠습니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title"><span class="accent">// </span>기술 및 역량</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/></svg>
+                    </div>
+                    <h3>취약점 분석</h3>
+                    <ul>
+                        <li>OWASP Top 10</li>
+                        <li>SQL Injection</li>
+                        <li>XSS / CSRF</li>
+                        <li>드림핵 워게임</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+                    </div>
+                    <h3>보안관제</h3>
+                    <ul>
+                        <li>실시간 로그 분석</li>
+                        <li>오탐 / 정탐 판별</li>
+                        <li>위협 탐지 및 대응</li>
+                        <li>보안 이벤트 모니터링</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z"/></svg>
+                    </div>
+                    <h3>웹 개발 / 인프라</h3>
+                    <ul>
+                        <li>백엔드 로직 설계</li>
+                        <li>데이터베이스 구축</li>
+                        <li>인프라 구조 이해</li>
+                        <li>입력값 취약점 분석</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+                    </div>
+                    <h3>CTF / 해킹대회</h3>
+                    <ul>
+                        <li>웹 해킹 동아리 Lockey</li>
+                        <li>제한시간 공격 수행</li>
+                        <li>익스플로잇 분석</li>
+                        <li>단계별 취약점 분석</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="activities">
+        <div class="container">
+            <h2 class="section-title"><span class="accent">// </span>활동 이력</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023.02 ~ 2023.12</span>
+                        <h3>학생회 안전관리국원</h3>
+                        <p>건양대학교 학생회 안전관리국 소속으로 활동하며 행사 안전 관리 및 학생 지원 업무를 담당했습니다.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024.02 ~ 2024.12</span>
+                        <h3>학생회 총괄국장</h3>
+                        <p>건양대학교 학생회 총괄국장으로서 전체 운영을 총괄하며 팀원 간 의견 조율과 갈등 중재 역할을 수행했습니다.</p>
+                    </div>
+                </div>
+                <div class="timeline-item active">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2026.02 ~ 진행중</span>
+                        <h3>학생회 홍보국장</h3>
+                        <p>건양대학교 학생회 홍보국장으로 다양한 홍보 콘텐츠 기획 및 학과 대외 이미지 관리를 담당하고 있습니다.</p>
+                        <span class="badge">진행중</span>
+                    </div>
+                </div>
+                <div class="timeline-item active">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2026.02 ~ 진행중</span>
+                        <h3>과 동아리 Lockey 부회장</h3>
+                        <p>사이버보안학과 웹 해킹 동아리 Lockey에서 부회장으로 활동하며 OWASP Top 10, SQL Injection, XSS 등 웹 취약점을 학습하고 있습니다.</p>
+                        <span class="badge">진행중</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title"><span class="accent">// </span>프로젝트</h2>
+            <div class="projects-grid">
+
+                <div class="project-card" data-href="./projects/project1.html">
+                    <div class="project-card-top">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z"/></svg>
+                        </div>
+                        <span class="project-tag">웹 개발</span>
+                    </div>
+                    <h3>프로젝트 제목을 입력하세요</h3>
+                    <p>프로젝트에 대한 설명을 여기에 작성해 주세요. 어떤 문제를 해결했는지, 어떤 기술을 사용했는지, 어떤 성과를 냈는지 간략하게 기술하면 좋습니다.</p>
+                    <div class="project-stack">
+                        <span class="stack-tag">Python</span>
+                        <span class="stack-tag">Flask</span>
+                        <span class="stack-tag">MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/lygyg0524-creator" target="_blank" rel="noopener" class="project-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-href="./projects/project2.html">
+                    <div class="project-card-top">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+                        </div>
+                        <span class="project-tag">보안 분석</span>
+                    </div>
+                    <h3>프로젝트 제목을 입력하세요</h3>
+                    <p>프로젝트에 대한 설명을 여기에 작성해 주세요. 어떤 취약점을 분석했는지, 어떤 도구를 활용했는지, 결과물이 무엇인지 설명해 주세요.</p>
+                    <div class="project-stack">
+                        <span class="stack-tag">Burp Suite</span>
+                        <span class="stack-tag">Wireshark</span>
+                        <span class="stack-tag">Kali Linux</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/lygyg0524-creator" target="_blank" rel="noopener" class="project-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-href="./projects/project3.html">
+                    <div class="project-card-top">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+                        </div>
+                        <span class="project-tag">CTF / 워게임</span>
+                    </div>
+                    <h3>프로젝트 제목을 입력하세요</h3>
+                    <p>드림핵 워게임 풀이 또는 해킹대회 참가 내용을 작성해 주세요. 어떤 문제를 풀었는지, 어떤 취약점을 발견했는지 설명하면 좋습니다.</p>
+                    <div class="project-stack">
+                        <span class="stack-tag">SQLi</span>
+                        <span class="stack-tag">XSS</span>
+                        <span class="stack-tag">CSRF</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/lygyg0524-creator" target="_blank" rel="noopener" class="project-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="selfintro">
+        <div class="container">
+            <h2 class="section-title"><span class="accent">// </span>자기소개</h2>
+            <div class="intro-grid">
+                <div class="intro-card">
+                    <div class="intro-card-header">
+                        <span class="intro-tag">[01]</span>
+                        <h3>생활 신조</h3>
+                    </div>
+                    <p>저의 생활 신조는 <strong>"좋은게 좋은 것"</strong>입니다. 타인에 대한 관용을 통해 불필요한 감정 소모를 줄이며, 원칙과 윤리가 필요한 상황에서는 단호함을 유지하되 방법론에서는 유연함을 발휘합니다.</p>
+                </div>
+                <div class="intro-card">
+                    <div class="intro-card-header">
+                        <span class="intro-tag">[02]</span>
+                        <h3>장점</h3>
+                    </div>
+                    <p>관심 분야나 목표가 생기면 주변의 소음이 들리지 않을 정도로 무섭게 몰두하는 <strong>"집중력"</strong>이 가장 큰 장점입니다. 단기간에 깊이 있는 성과를 만들어내는 에너지를 가지고 있습니다.</p>
+                </div>
+                <div class="intro-card">
+                    <div class="intro-card-header">
+                        <span class="intro-tag">[03]</span>
+                        <h3>단점 및 보완</h3>
+                    </div>
+                    <p>초반의 강력한 에너지를 끝까지 유지하는 <strong>"끈기"</strong>가 다소 부족합니다. 이를 보완하기 위해 동료와 목표를 공유하고 서로 피드백을 주고받는 <strong>"러닝메이트 전략"</strong>을 활용합니다.</p>
+                </div>
+                <div class="intro-card">
+                    <div class="intro-card-header">
+                        <span class="intro-tag">[04]</span>
+                        <h3>지원 동기</h3>
+                    </div>
+                    <p>보안관제 수업을 통해 <strong>24시간 실시간 위협 탐지</strong>에 매력을 느꼈습니다. 네트워크 최전방에서 실제 공격 로그를 분석하며 기업의 자산을 지키는 관제 업무가 저의 폭발적인 몰입력을 가장 가치 있게 발휘할 수 있는 직무라고 확신합니다.</p>
+                </div>
+            </div>
+
+            <div class="competency-box">
+                <div class="competency-header">
+                    <span class="accent">&gt;</span> 직무 역량
+                </div>
+                <p>웹 해킹 동아리 활동을 통해 OWASP Top 10을 비롯한 주요 웹 취약점의 원리와 익스플로잇 과정을 학습했습니다. 드림핵 플랫폼에서 다양한 워게임을 풀이하며 SQL Injection, XSS, CSRF 등 실제 서비스에서 발생할 수 있는 취약점을 단계별로 분석했습니다. 이러한 분석 경험은 관제 시스템에 탐지된 로그가 실제 공격인지, 정상적인 요청인지 판별하는 오탐 분석의 기초 체력이 되었습니다. 찰나의 순간 기록되는 로그 한 줄에서도 위협의 실마리를 찾아내는 집요함으로, 빈틈없는 실시간 모니터링 체계를 유지하는 관제 요원이 되겠습니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title"><span class="accent">// </span>연락처</h2>
+            <div class="contact-grid">
+                <a href="mailto:lygyg0524@naver.com" class="contact-card">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+                    </div>
+                    <div>
+                        <p class="contact-label">이메일</p>
+                        <p class="contact-value">lygyg0524@naver.com</p>
+                    </div>
+                </a>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+                    </div>
+                    <div>
+                        <p class="contact-label">전화번호</p>
+                        <p class="contact-value">010-5855-3928</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+                    </div>
+                    <div>
+                        <p class="contact-label">위치</p>
+                        <p class="contact-value">충북 음성군 생극면</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p><span class="accent">// </span>© 2026 임양균. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
